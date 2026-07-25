@@ -1,15 +1,15 @@
 {
-  "versionCode": 169,
+  "versionCode": 171,
   "version": "1.83.0725",
-  "versionFull": "1.83.0725+169",
+  "versionFull": "1.83.0725+171",
   "downloads": {
-    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b169/edgenest-router_1.83.0725+169_x86_64.ipk",
-    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b169/edgenest-router_1.83.0725+169_aarch64_generic.ipk"
+    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b171/edgenest-router_1.83.0725+171_x86_64.ipk",
+    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b171/edgenest-router_1.83.0725+171_aarch64_generic.ipk"
   },
   "sha256": {
-    "x86_64": "b6bf6c29d4f2461d25c8d0c58cb083adf625bf9e36e87574585929c9242cf576",
-    "aarch64_generic": "642e5d9059badb7907ea5bbbd270e2100cfc71201370c674b4527173eed46f14"
+    "x86_64": "c55bf5e61c65561f225dacd7c1d77075803bcd29ef48fe763b8e7bdd377b0e9a",
+    "aarch64_generic": "dfc59ddfe03170c7298697651b2097ee224f6e8520ceb165b37130f5fc9c9048"
   },
-  "notesZh": "- 新增「关于」页：版本信息、更新记录与合规说明。\n- 在线升级：关于 → 检查更新 可直接升级面板（下载优先走代理、失败回退直连，安装包经校验后落地；升级不影响设置与数据）。\n- 面板端口可自定义（设置 → 面板端口，默认 1123），修改后自动重启到新端口。\n- 新增可关闭的匿名安装统计：仅随机安装 ID、版本号、平台三项，用于统计各版本安装与更新情况，可在「关于」页随时关闭。\n- 发布渠道同时提供 .run 单文件安装包（适合在 iStore 手动安装）。",
-  "notesEn": "- New About page: version info, changelog, and the compliance note.\n- In-place upgrades: About → Check for updates upgrades the panel directly (downloads prefer the proxy and fall back to direct; packages are checksum-verified before installing; settings and data are untouched).\n- The panel port is now configurable (Settings → Panel port, default 1123); changing it restarts the panel onto the new port automatically.\n- New optional anonymous install statistics: just a random install ID, the version, and the platform — used to count installs and upgrades per version, switchable off on the About page at any time.\n- Releases now also ship a self-contained .run installer (for manual installs on iStore boxes)."
+  "notesZh": "首个公开版本：\n- 透明代理：局域网设备经路由器分流上网，代理 / 直连 / 规则三种整机模式。\n- 规则分流：内置规则包、自定义规则、远程规则集，广告拦截与国内直连。\n- 节点与订阅：订阅管理（流量条与到期显示、自动更新、更新方式直连 / 经代理、摄像头扫码导入）、节点分组（手动建组或按地区 / 协议一键分组）、节点测速、实时流量与出口 IP 展示。\n- 设备识别与访问控制：按设备设置上网方式（直连 / 代理 / 分流 / 指定节点或分组 / 阻断）。\n- 组网（WireGuard）：路由器作为远程接入点，在外设备拨入后如同在家；设备可启停、设有效期、轮换密钥，支持隧道范围选择、一次性接入链接与二维码导入；「阻断」同时隔离家庭内网。\n- 跨设备同步中转：路由器充当常驻同步主机，共享剪贴板与文件互传。\n- 日志级别过滤与双源、DNS 上游可改与查询测试、实时连接列表、每月流量统计、备份与恢复、恢复默认。\n- 在线升级（下载显示进度、安装包经校验后落地）、面板端口可自定义、可关闭的匿名安装统计。\n- 中英双语界面。",
+  "notesEn": "First public release:\n- Transparent proxy: LAN devices route through the router with three machine modes — proxy / direct / rule.\n- Split routing: built-in rule packs, custom rules, and remote rule sets, with ad blocking and domestic-direct.\n- Nodes & subscriptions: subscription management (traffic bar and expiry, auto-refresh, fetch mode direct / via proxy, camera QR import), node groups (by hand or one-tap presets by region / protocol), latency testing, live traffic and exit-IP display.\n- Device discovery and access control: a per-device policy (direct / proxy / split / a node or group / block).\n- Mesh (WireGuard): the router acts as a remote access point — devices away from home dial in and behave as if on-site; devices can be enabled/disabled, given an expiry, or key-rotated, with tunnel-scope selection, one-time access links and QR import; Block also isolates the home LAN.\n- Cross-device sync relay: the router serves as an always-on sync host for a shared clipboard and file hand-off.\n- Log level filtering with a second source, editable DNS upstream with a query tester, a live connection list, monthly traffic statistics, backup & restore, and factory reset.\n- In-place upgrades (with download progress; packages are checksum-verified before installing), a configurable panel port, and optional anonymous install statistics.\n- Bilingual UI (Chinese / English)."
 }
