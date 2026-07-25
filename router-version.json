@@ -1,15 +1,15 @@
 {
-  "versionCode": 168,
+  "versionCode": 169,
   "version": "1.83.0725",
-  "versionFull": "1.83.0725+168",
+  "versionFull": "1.83.0725+169",
   "downloads": {
-    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b168/edgenest-router_1.83.0725+168_x86_64.ipk",
-    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b168/edgenest-router_1.83.0725+168_aarch64_generic.ipk"
+    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b169/edgenest-router_1.83.0725+169_x86_64.ipk",
+    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b169/edgenest-router_1.83.0725+169_aarch64_generic.ipk"
   },
   "sha256": {
-    "x86_64": "ffdd73e5622ce7f72b8ebeefe6a88047fdb467b3923d406ad3ac1571c69ac615",
-    "aarch64_generic": "99aff6145f2781c93033e670e986d4ad34885359c9ccbd065215ed5fb0468ed1"
+    "x86_64": "7c966cb6a86f68569cb11a09af03a9b3f936d396d0c0e7b4d4692a36591f3add",
+    "aarch64_generic": "498eb3e9e719fe9ab8ff753de3164355e699e322b7a2a67e7fe1e446deb4f04f"
   },
-  "notesZh": "- 新增「关于」页：版本信息、更新记录与合规说明。\n- 在线升级：关于 → 检查更新 可直接升级面板（下载优先走代理、失败回退直连，安装包经校验后落地；升级不影响设置与数据）。\n- 新增可关闭的匿名安装统计：仅随机安装 ID、版本号、平台三项，用于统计各版本安装与更新情况，可在「关于」页随时关闭。",
-  "notesEn": "- New About page: version info, changelog, and the compliance note.\n- In-place upgrades: About → Check for updates upgrades the panel directly (downloads prefer the proxy and fall back to direct; packages are checksum-verified before installing; settings and data are untouched).\n- New optional anonymous install statistics: just a random install ID, the version, and the platform — used to count installs and upgrades per version, switchable off on the About page at any time."
+  "notesZh": "- 新增「关于」页：版本信息、更新记录与合规说明。\n- 在线升级：关于 → 检查更新 可直接升级面板（下载优先走代理、失败回退直连，安装包经校验后落地；升级不影响设置与数据）。\n- 面板端口可自定义（设置 → 面板端口，默认 1123），修改后自动重启到新端口。\n- 新增可关闭的匿名安装统计：仅随机安装 ID、版本号、平台三项，用于统计各版本安装与更新情况，可在「关于」页随时关闭。\n- 发布渠道同时提供 .run 单文件安装包（适合在 iStore 手动安装）。",
+  "notesEn": "- New About page: version info, changelog, and the compliance note.\n- In-place upgrades: About → Check for updates upgrades the panel directly (downloads prefer the proxy and fall back to direct; packages are checksum-verified before installing; settings and data are untouched).\n- The panel port is now configurable (Settings → Panel port, default 1123); changing it restarts the panel onto the new port automatically.\n- New optional anonymous install statistics: just a random install ID, the version, and the platform — used to count installs and upgrades per version, switchable off on the About page at any time.\n- Releases now also ship a self-contained .run installer (for manual installs on iStore boxes)."
 }
