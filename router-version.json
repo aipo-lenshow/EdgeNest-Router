@@ -1,14 +1,14 @@
 {
-  "versionCode": 173,
+  "versionCode": 174,
   "version": "1.83.0725",
-  "versionFull": "1.83.0725+173",
+  "versionFull": "1.83.0725+174",
   "downloads": {
-    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b173/edgenest-router_1.83.0725+173_x86_64.ipk",
-    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b173/edgenest-router_1.83.0725+173_aarch64_generic.ipk"
+    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b174/edgenest-router_1.83.0725+174_x86_64.ipk",
+    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b174/edgenest-router_1.83.0725+174_aarch64_generic.ipk"
   },
   "sha256": {
-    "x86_64": "1106b3618c5723b4b84b4bb8d6f8c6d1f99fb84793b8533ec9ddeb1e81e2d999",
-    "aarch64_generic": "c866fad862f11a66c0265f6fc90f32b0a573d48b93c93a500de1eb941415e1ba"
+    "x86_64": "7236fb680cb4d2f34cb30ca7dc05f477e000dca632843d5381278d24b4c66363",
+    "aarch64_generic": "2d9424303ba3b186576fb6fe9c03647d19f2aaa6dd0f7369020ad62c0b8e3d62"
   },
   "notesZh": "首个公开版本：\n- 透明代理：局域网设备经路由器分流上网，代理 / 直连 / 规则三种整机模式。\n- 规则分流：内置规则包、自定义规则、远程规则集，广告拦截与国内直连。\n- 节点与订阅：订阅管理（流量条与到期显示、自动更新、更新方式直连 / 经代理、摄像头扫码导入）、节点分组（手动建组或按地区 / 协议一键分组）、节点测速、实时流量与出口 IP 展示。\n- 设备识别与访问控制：按设备设置上网方式（直连 / 代理 / 分流 / 指定节点或分组 / 阻断）。\n- 组网（WireGuard）：路由器作为远程接入点，在外设备拨入后如同在家；设备可启停、设有效期、轮换密钥，支持隧道范围选择、一次性接入链接与二维码导入；「阻断」同时隔离家庭内网。\n- 跨设备同步中转：路由器充当常驻同步主机，共享剪贴板与文件互传。\n- 日志级别过滤与双源、DNS 上游可改与查询测试、实时连接列表、每月流量统计、备份与恢复、恢复默认。\n- 在线升级（下载显示进度、安装包经校验后落地）、面板端口可自定义、可关闭的匿名安装统计。\n- 中英双语界面。",
   "notesEn": "First public release:\n- Transparent proxy: LAN devices route through the router with three machine modes — proxy / direct / rule.\n- Split routing: built-in rule packs, custom rules, and remote rule sets, with ad blocking and domestic-direct.\n- Nodes & subscriptions: subscription management (traffic bar and expiry, auto-refresh, fetch mode direct / via proxy, camera QR import), node groups (by hand or one-tap presets by region / protocol), latency testing, live traffic and exit-IP display.\n- Device discovery and access control: a per-device policy (direct / proxy / split / a node or group / block).\n- Mesh (WireGuard): the router acts as a remote access point — devices away from home dial in and behave as if on-site; devices can be enabled/disabled, given an expiry, or key-rotated, with tunnel-scope selection, one-time access links and QR import; Block also isolates the home LAN.\n- Cross-device sync relay: the router serves as an always-on sync host for a shared clipboard and file hand-off.\n- Log level filtering with a second source, editable DNS upstream with a query tester, a live connection list, monthly traffic statistics, backup & restore, and factory reset.\n- In-place upgrades (with download progress; packages are checksum-verified before installing), a configurable panel port, and optional anonymous install statistics.\n- Bilingual UI (Chinese / English)."
