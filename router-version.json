@@ -1,0 +1,15 @@
+{
+  "versionCode": 167,
+  "version": "1.83.0725",
+  "versionFull": "1.83.0725+167",
+  "downloads": {
+    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b167/edgenest-router_1.83.0725+167_x86_64.ipk",
+    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b167/edgenest-router_1.83.0725+167_aarch64_generic.ipk"
+  },
+  "sha256": {
+    "x86_64": "e4536a16bf888bb20271a634a5689835f21f8a0445f9422fdb598b1aa90df083",
+    "aarch64_generic": "fb08dc7e4e15878e75283064f1d9ef4af88ff9453bd319616cecd9cee8f6f5f5"
+  },
+  "notesZh": "组网（WireGuard）增强：\n- 设备管理：每台组网设备可启停、设有效期、改名、轮换密钥；服务器密钥可整体重置（所有设备需重新导入）。\n- 访问控制：组网设备可像局域网设备一样设置上网方式（直连 / 代理 / 分流 / 指定节点或分组 / 阻断）；「阻断」现在同时隔离家庭内网。\n- 隧道范围：全隧道（全部流量经路由器）或仅家庭网段（其余流量走本地网络）可选。\n- 一次性接入链接：生成一条 24 小时有效、打开一次即失效的链接，交给设备使用者自行扫码导入。\n- 设备行显示在线状态、最近握手与流量；修改公网地址 / 端口 / 网段后提示旧配置需重新导入；有设备时不允许改内网网段，避免设备批量失联。\n- 面板所有删除与危险操作统一改为应用内确认弹窗。",
+  "notesEn": "Mesh (WireGuard) enhancements:\n- Device management: each mesh device can be enabled/disabled, given an expiry, renamed, or have its key rotated; the server key can be reset as a whole (every device must re-import).\n- Access control: mesh devices take the same policies as LAN devices (direct / proxy / split / a node or group / block); Block now also isolates the home LAN.\n- Tunnel scope: full tunnel (all traffic via the router) or home networks only (other traffic stays local).\n- One-time access links: mint a link valid for 24 hours that works exactly once — hand it to the device's user to scan and import themselves.\n- Device rows show online state, last handshake and traffic; changing the public endpoint / port / subnet flags old configs for re-import; the overlay subnet is locked while devices exist, so they can't be stranded in one move.\n- Every destructive action across the panel now uses the in-app confirmation dialog."
+}
