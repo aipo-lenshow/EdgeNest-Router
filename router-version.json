@@ -3,8 +3,8 @@
   "version": "1.83.0725",
   "versionFull": "1.83.0725+178",
   "downloads": {
-    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b178/edgenest-router_1.83.0725+178_x86_64.ipk",
-    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0725-b178/edgenest-router_1.83.0725+178_aarch64_generic.ipk"
+    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-Router/releases/download/v1.83.0725/edgenest-router_1.83.0725+178_x86_64.ipk",
+    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-Router/releases/download/v1.83.0725/edgenest-router_1.83.0725+178_aarch64_generic.ipk"
   },
   "sha256": {
     "x86_64": "53b3739902da418871a63dca073db3438e27da5a324c9a4be5b9171ea3dadc2b",
