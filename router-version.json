@@ -1,15 +1,15 @@
 {
-  "versionCode": 179,
-  "version": "1.83.0727",
-  "versionFull": "1.83.0727+179",
+  "versionCode": 181,
+  "version": "1.92.0727",
+  "versionFull": "1.92.0727+181",
   "downloads": {
-    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0727/edgenest-router_1.83.0727+179_x86_64.ipk",
-    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0727/edgenest-router_1.83.0727+179_aarch64_generic.ipk"
+    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.92.0727/edgenest-router_1.92.0727+181_x86_64.ipk",
+    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.92.0727/edgenest-router_1.92.0727+181_aarch64_generic.ipk"
   },
   "sha256": {
-    "x86_64": "97cb50366392aad1e0e983743cddcf17dd254dfe7d789a43b750aab9de9d8ac0",
-    "aarch64_generic": "234ed6254c841b0a5abca1377277486a58e302882142eb60f68748dff48d3e8e"
+    "x86_64": "59624d43319a253c00c39760e0aa3b94fb5002fea68792ded34401fb2cf5f067",
+    "aarch64_generic": "c09779c62f7f0a73117061561cf9ad7ee5c24d1ef9e6f8f681dec8cd46596fd5"
   },
-  "notesZh": "组网与同步：\n- 组网设备可一键加入同步：客户端接入本路由器组网后，无需手动输入配对码即可加入跨设备同步（同步数据经本路由器中转）。\n- 组网配置导出中附带同步入口信息，客户端扫码或导入后自动识别。\n界面修复：\n- 修复部分浏览器下「复制」按钮点击无响应的问题，复制结果现在会明确提示成功或失败。\n- 修复手机浏览器上下拉菜单弹出后立即关闭、无法选择的问题。\n\n删除订阅后的分组处理：\n- 删除订阅时，其节点会从所有分组中一并移除；此前只有跟随该订阅自动建立的分组会消失，手工建立的分组仍会列出已经不存在的节点。\n- 分组内成员被全部移除后，该分组会自动删除，不再留下空分组。\n- 「指定成员」分组中被选中的节点若随订阅一起删除，选中状态会一并清除。\n- 停用订阅不会改动分组：停用是临时的，只有删除才会收敛分组成员。",
-  "notesEn": "Mesh and sync:\n- One-tap sync join for mesh devices: once a client is dialled into this router's mesh, it can join cross-device sync without typing a pairing code (sync data is relayed through this router).\n- The mesh config export carries the sync entry point, which clients pick up automatically on scan or import.\nInterface fixes:\n- Fixed copy buttons doing nothing in some browsers; copying now clearly reports success or failure.\n- Fixed dropdown menus on mobile browsers closing immediately after opening.\n\nGroups after a subscription is removed:\n- Deleting a subscription now takes its nodes out of every group. Previously only the group created alongside that subscription disappeared, while hand-made groups kept listing nodes that no longer existed.\n- A group left with no members is removed rather than kept as an empty one.\n- If the pinned member of a select group went away with the subscription, the pin is cleared.\n- Disabling a subscription changes nothing: that is temporary, and only deletion prunes group members."
+  "notesZh": "删除订阅后的分组处理：\n- 删除订阅时，其节点会从所有分组中一并移除；此前只有跟随该订阅自动建立的分组会消失，手工建立的分组仍会列出已经不存在的节点。\n- 分组内成员被全部移除后，该分组会自动删除，不再留下空分组。\n- 「指定成员」分组中被选中的节点若随订阅一起删除，选中状态会一并清除。\n- 停用订阅不会改动分组：停用是临时的，只有删除才会收敛分组成员。",
+  "notesEn": "Groups after a subscription is removed:\n- Deleting a subscription now takes its nodes out of every group. Previously only the group created alongside that subscription disappeared, while hand-made groups kept listing nodes that no longer existed.\n- A group left with no members is removed rather than kept as an empty one.\n- If the pinned member of a select group went away with the subscription, the pin is cleared.\n- Disabling a subscription changes nothing: that is temporary, and only deletion prunes group members."
 }
