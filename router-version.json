@@ -1,15 +1,15 @@
 {
-  "versionCode": 178,
-  "version": "1.83.0725",
-  "versionFull": "1.83.0725+178",
+  "versionCode": 179,
+  "version": "1.83.0727",
+  "versionFull": "1.83.0727+179",
   "downloads": {
-    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-Router/releases/download/v1.83.0725/edgenest-router_1.83.0725+178_x86_64.ipk",
-    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-Router/releases/download/v1.83.0725/edgenest-router_1.83.0725+178_aarch64_generic.ipk"
+    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0727/edgenest-router_1.83.0727+179_x86_64.ipk",
+    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.83.0727/edgenest-router_1.83.0727+179_aarch64_generic.ipk"
   },
   "sha256": {
-    "x86_64": "53b3739902da418871a63dca073db3438e27da5a324c9a4be5b9171ea3dadc2b",
-    "aarch64_generic": "6a08f9cbb2f308ae5576e5f5cb43ae20e3c11ab0154d268272bdb7b11010b7f8"
+    "x86_64": "97cb50366392aad1e0e983743cddcf17dd254dfe7d789a43b750aab9de9d8ac0",
+    "aarch64_generic": "234ed6254c841b0a5abca1377277486a58e302882142eb60f68748dff48d3e8e"
   },
-  "notesZh": "首个公开版本：\n- 透明代理：局域网设备经路由器分流上网，代理 / 直连 / 规则三种整机模式。\n- 规则分流：内置规则包、自定义规则、远程规则集，广告拦截与国内直连。\n- 节点与订阅：订阅管理（流量条与到期显示、自动更新、更新方式直连 / 经代理、摄像头扫码导入）、节点分组（手动建组或按地区 / 协议一键分组）、节点测速、实时流量与出口 IP 展示。\n- 设备识别与访问控制：按设备设置上网方式（直连 / 代理 / 分流 / 指定节点或分组 / 阻断）。\n- 组网（WireGuard）：路由器作为远程接入点，在外设备拨入后如同在家；设备可启停、设有效期、轮换密钥，支持隧道范围选择、一次性接入链接与二维码导入；「阻断」同时隔离家庭内网。\n- 跨设备同步中转：路由器充当常驻同步主机，共享剪贴板与文件互传。\n- 日志级别过滤与双源、DNS 上游可改与查询测试、实时连接列表、每月流量统计、备份与恢复、恢复默认。\n- 在线升级（下载显示进度、安装包经校验后落地）、面板端口可自定义、可关闭的匿名安装统计。\n- 中英双语界面。",
-  "notesEn": "First public release:\n- Transparent proxy: LAN devices route through the router with three machine modes — proxy / direct / rule.\n- Split routing: built-in rule packs, custom rules, and remote rule sets, with ad blocking and domestic-direct.\n- Nodes & subscriptions: subscription management (traffic bar and expiry, auto-refresh, fetch mode direct / via proxy, camera QR import), node groups (by hand or one-tap presets by region / protocol), latency testing, live traffic and exit-IP display.\n- Device discovery and access control: a per-device policy (direct / proxy / split / a node or group / block).\n- Mesh (WireGuard): the router acts as a remote access point — devices away from home dial in and behave as if on-site; devices can be enabled/disabled, given an expiry, or key-rotated, with tunnel-scope selection, one-time access links and QR import; Block also isolates the home LAN.\n- Cross-device sync relay: the router serves as an always-on sync host for a shared clipboard and file hand-off.\n- Log level filtering with a second source, editable DNS upstream with a query tester, a live connection list, monthly traffic statistics, backup & restore, and factory reset.\n- In-place upgrades (with download progress; packages are checksum-verified before installing), a configurable panel port, and optional anonymous install statistics.\n- Bilingual UI (Chinese / English)."
+  "notesZh": "组网与同步：\n- 组网设备可一键加入同步：客户端接入本路由器组网后，无需手动输入配对码即可加入跨设备同步（同步数据经本路由器中转）。\n- 组网配置导出中附带同步入口信息，客户端扫码或导入后自动识别。\n界面修复：\n- 修复部分浏览器下「复制」按钮点击无响应的问题，复制结果现在会明确提示成功或失败。\n- 修复手机浏览器上下拉菜单弹出后立即关闭、无法选择的问题。\n\n删除订阅后的分组处理：\n- 删除订阅时，其节点会从所有分组中一并移除；此前只有跟随该订阅自动建立的分组会消失，手工建立的分组仍会列出已经不存在的节点。\n- 分组内成员被全部移除后，该分组会自动删除，不再留下空分组。\n- 「指定成员」分组中被选中的节点若随订阅一起删除，选中状态会一并清除。\n- 停用订阅不会改动分组：停用是临时的，只有删除才会收敛分组成员。",
+  "notesEn": "Mesh and sync:\n- One-tap sync join for mesh devices: once a client is dialled into this router's mesh, it can join cross-device sync without typing a pairing code (sync data is relayed through this router).\n- The mesh config export carries the sync entry point, which clients pick up automatically on scan or import.\nInterface fixes:\n- Fixed copy buttons doing nothing in some browsers; copying now clearly reports success or failure.\n- Fixed dropdown menus on mobile browsers closing immediately after opening.\n\nGroups after a subscription is removed:\n- Deleting a subscription now takes its nodes out of every group. Previously only the group created alongside that subscription disappeared, while hand-made groups kept listing nodes that no longer existed.\n- A group left with no members is removed rather than kept as an empty one.\n- If the pinned member of a select group went away with the subscription, the pin is cleared.\n- Disabling a subscription changes nothing: that is temporary, and only deletion prunes group members."
 }
