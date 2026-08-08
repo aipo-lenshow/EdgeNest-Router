@@ -1,15 +1,15 @@
 {
-  "versionCode": 181,
-  "version": "1.92.0727",
-  "versionFull": "1.92.0727+181",
+  "versionCode": 183,
+  "version": "1.92.0809",
+  "versionFull": "1.92.0809+183",
   "downloads": {
-    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.92.0727/edgenest-router_1.92.0727+181_x86_64.ipk",
-    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.92.0727/edgenest-router_1.92.0727+181_aarch64_generic.ipk"
+    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.92.0809/edgenest-router_1.92.0809+183_x86_64.ipk",
+    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.92.0809/edgenest-router_1.92.0809+183_aarch64_generic.ipk"
   },
   "sha256": {
-    "x86_64": "59624d43319a253c00c39760e0aa3b94fb5002fea68792ded34401fb2cf5f067",
-    "aarch64_generic": "c09779c62f7f0a73117061561cf9ad7ee5c24d1ef9e6f8f681dec8cd46596fd5"
+    "x86_64": "9f81800aea1da1838280b7fb686b930ae3ceeb8758c52bd89d937fef98c2e771",
+    "aarch64_generic": "d227fd2395dde1c54173dd06714ef059f3aa7ef233ecdafa16e31abdcaee460e"
   },
-  "notesZh": "删除订阅后的分组处理：\n- 删除订阅时，其节点会从所有分组中一并移除；此前只有跟随该订阅自动建立的分组会消失，手工建立的分组仍会列出已经不存在的节点。\n- 分组内成员被全部移除后，该分组会自动删除，不再留下空分组。\n- 「指定成员」分组中被选中的节点若随订阅一起删除，选中状态会一并清除。\n- 停用订阅不会改动分组：停用是临时的，只有删除才会收敛分组成员。",
-  "notesEn": "Groups after a subscription is removed:\n- Deleting a subscription now takes its nodes out of every group. Previously only the group created alongside that subscription disappeared, while hand-made groups kept listing nodes that no longer existed.\n- A group left with no members is removed rather than kept as an empty one.\n- If the pinned member of a select group went away with the subscription, the pin is cleared.\n- Disabling a subscription changes nothing: that is temporary, and only deletion prunes group members."
+  "notesZh": "局域网代理端口：\n- 新增「代理端口」独立页面，可开设多个局域网 HTTP / SOCKS / 混合代理端口，给单台设备或单个应用配置代理，无需改动整机网关。\n- 每个端口可独立开启账号密码鉴权，未携带凭据的连接会被拒绝。\n- 每个端口可独立选择出口：跟随分流、自动选择、指定分组或节点、直连，与设备策略含义一致。\n- 端口仅对局域网及组网接口开放，广域网侧不可达。",
+  "notesEn": "LAN proxy ports:\n- New dedicated \"Proxy ports\" page: open multiple LAN-facing HTTP / SOCKS / mixed proxy ports, so a single device or application can use a proxy without changing its gateway.\n- Each port can require its own username and password; connections without credentials are refused.\n- Each port can pick its own exit: follow routing, auto select, a specific group or node, or direct — same semantics as device policies.\n- Ports are reachable only from the LAN and mesh interfaces, never from the WAN side."
 }
