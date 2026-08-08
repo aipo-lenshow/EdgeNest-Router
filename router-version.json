@@ -1,15 +1,15 @@
 {
-  "versionCode": 183,
-  "version": "1.92.0809",
-  "versionFull": "1.92.0809+183",
+  "versionCode": 188,
+  "version": "1.93.0809",
+  "versionFull": "1.93.0809+188",
   "downloads": {
-    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.92.0809/edgenest-router_1.92.0809+183_x86_64.ipk",
-    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.92.0809/edgenest-router_1.92.0809+183_aarch64_generic.ipk"
+    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.93.0809/edgenest-router_1.93.0809+188_x86_64.ipk",
+    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.93.0809/edgenest-router_1.93.0809+188_aarch64_generic.ipk"
   },
   "sha256": {
-    "x86_64": "9f81800aea1da1838280b7fb686b930ae3ceeb8758c52bd89d937fef98c2e771",
-    "aarch64_generic": "d227fd2395dde1c54173dd06714ef059f3aa7ef233ecdafa16e31abdcaee460e"
+    "x86_64": "8addcaf3a2c9423633aa56ae78623a7552785dfc25b8a162035e359501a3fe6c",
+    "aarch64_generic": "c2f168a9970c560681573d430f0a908bc5668c05043e5dcfa5b9cb10bec52425"
   },
-  "notesZh": "局域网代理端口：\n- 新增「代理端口」独立页面，可开设多个局域网 HTTP / SOCKS / 混合代理端口，给单台设备或单个应用配置代理，无需改动整机网关。\n- 每个端口可独立开启账号密码鉴权，未携带凭据的连接会被拒绝。\n- 每个端口可独立选择出口：跟随分流、自动选择、指定分组或节点、直连，与设备策略含义一致。\n- 端口仅对局域网及组网接口开放，广域网侧不可达。",
-  "notesEn": "LAN proxy ports:\n- New dedicated \"Proxy ports\" page: open multiple LAN-facing HTTP / SOCKS / mixed proxy ports, so a single device or application can use a proxy without changing its gateway.\n- Each port can require its own username and password; connections without credentials are refused.\n- Each port can pick its own exit: follow routing, auto select, a specific group or node, or direct — same semantics as device policies.\n- Ports are reachable only from the LAN and mesh interfaces, never from the WAN side."
+  "notesZh": "局域网 SOCKS / HTTP 代理端口：\n- 新增「SOCKS」独立页面，可开设多个局域网 SOCKS / HTTP / 混合代理端口，给单台设备或单个应用直接配置代理，无需改动整机网关（例如给 NAS 上的 Docker 配 HTTP_PROXY 拉取镜像）。\n- 每个端口可独立选择出口：跟随分流、自动选择、指定分组或节点、直连，与设备策略含义一致。\n- 每个端口可独立开启账号密码鉴权；用户名密码在保存时校验合规，端口占用会被提前拦截。\n- 端口仅对局域网及组网接口开放，广域网侧不可达。\n概览与日志：\n- 概览页新增网络连通性面板：对国内网络、Google、Cloudflare、GitHub、YouTube、OpenAI 等站点逐一检测可达性与延迟，可单站或一键全部测试。\n- 日志自动清理：可在设置里设定日志大小上限，超过后自动保留最近内容；磁盘剩余空间不足时无论大小都会提前清理，避免写满存储影响系统。日志页显示当前日志大小。\n- 软件升级更稳健：升级前预检磁盘空间，安装失败自动回滚到上一个可用版本。",
+  "notesEn": "LAN SOCKS / HTTP proxy ports:\n- New dedicated \"SOCKS\" page: open multiple LAN-facing SOCKS / HTTP / mixed proxy ports so a single device or application can use a proxy directly, without changing its gateway (e.g. set HTTP_PROXY for the Docker daemon on a NAS to pull images).\n- Each port can pick its own exit: follow routing, auto select, a specific group or node, or direct — same semantics as device policies.\n- Each port can require its own username and password; credentials are validated on save, and a port already in use is rejected up front.\n- Ports are reachable only from the LAN and mesh interfaces, never from the WAN side.\nOverview and logs:\n- New connectivity panel on the overview: checks reachability and latency to sites such as China network, Google, Cloudflare, GitHub, YouTube and OpenAI, one at a time or all at once.\n- Automatic log cleanup: set a log size limit in Settings and older content is trimmed past it; when free disk space runs low the log is trimmed early regardless of size, so logging can never fill the storage. The Logs page shows the current log size.\n- Sturdier upgrades: free space is checked before installing, and a failed install rolls back to the last working version."
 }
