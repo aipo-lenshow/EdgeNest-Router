@@ -1,15 +1,15 @@
 {
-  "versionCode": 191,
+  "versionCode": 192,
   "version": "1.93",
-  "versionFull": "1.93+191",
+  "versionFull": "1.93+192",
   "downloads": {
-    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.93/edgenest-router_1.93+191_x86_64.ipk",
-    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.93/edgenest-router_1.93+191_aarch64_generic.ipk"
+    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.93/edgenest-router_1.93+192_x86_64.ipk",
+    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.93/edgenest-router_1.93+192_aarch64_generic.ipk"
   },
   "sha256": {
-    "x86_64": "e1c1996c18505c52763117c2ad763d5f9d16e72a7c83b1ca2b8d8b06b69e9fa0",
-    "aarch64_generic": "19212ed317c8c38fa0f4941fec31a905836cdf9add0854ebc1672045c73f2610"
+    "x86_64": "e73523532fb7383db23590b5d58fb5f17458cc1f2f87219b398fa5ff8f455334",
+    "aarch64_generic": "8a2f58a186f6b1a981b8061636322f23edfa2c251d20740ca2578abdbfffbe00"
   },
-  "notesZh": "CDN 节点自动优选升级：\n- 同一网络的手机、电脑和路由器共享测速结果，新连接直接用上好地址；只发送网络类别和每个地址的快慢，可在「CDN 优选」里关闭。\n- 新增「重新优选」和「固定使用」；显示当前网络、每个地址的结果和上次上报情况。\n- 订阅里同一入口的多个 CDN 地址合并成一行显示。\n- 网络不稳时自动作废这一轮测速，并拉长下次测速的间隔。\n订阅：\n- 可以编辑订阅名称和链接。\n- 更新方式可选：只走直连、只走代理、代理优先失败改直连、直连优先失败改代理。\n- EdgeNest 订阅每 30 分钟自动刷新；重复添加同一订阅时提示。\n连接：\n- 节点连不上时更快换到其他节点；所有节点同时失败时（例如断网）不来回切换。\n- 自动选择每 60 秒测速一次。\n其他：\n- 设备页「删除」改为「删除规则」，并说明删除后跟随全局。\n- 匿名统计新增首次提示与重置安装 ID。",
-  "notesEn": "CDN address auto-pick upgrade:\n- Phones, computers and routers on the same network share test results, so new connections start on good addresses; only the network type and how each address did are sent, and it can be switched off under CDN addresses.\n- New Re-optimise and Pin; shows the current network, each address's result and the last report.\n- A subscription entry's several CDN addresses now show as one row.\n- A round taken while the network is unstable is dropped, and the next one waits longer.\nSubscriptions:\n- A subscription's name and link can be edited.\n- Choose how it updates: direct only, proxy only, proxy first then direct, or direct first then proxy.\n- EdgeNest subscriptions refresh every 30 minutes; adding the same subscription twice is flagged.\nConnections:\n- Moves off a node that cannot connect sooner; when every node fails at once (for example, no network) it no longer switches back and forth.\n- Automatic selection tests every 60 seconds.\nOther:\n- On the Devices page, Delete is now Delete rule, and says the device then follows the global mode.\n- Anonymous statistics get a first-run notice and a reset-install-ID button."
+  "notesZh": "CDN 节点自动优选升级：\n- 同一网络的手机、电脑和路由器共享测速结果，新连接直接用上好地址；只发送网络类别和每个地址的快慢，可在「CDN 优选」里关闭。\n- 新增「重新优选」和「固定使用」；显示当前网络、每个地址的结果和上次上报情况。\n- 订阅里同一入口的多个 CDN 地址合并成一行显示。\n- 网络不稳时自动作废这一轮测速，并拉长下次测速的间隔。\n订阅：\n- 可以编辑订阅名称和链接。\n- 更新方式可选：只走直连、只走代理、代理优先失败改直连、直连优先失败改代理。\n- EdgeNest 订阅每 30 分钟自动刷新；重复添加同一订阅时提示。\n连接：\n- 节点连不上时更快换到其他节点；所有节点同时失败时（例如断网）不来回切换。\n- 自动选择每 60 秒测速一次。\n其他：\n- 设备页「删除」改为「删除规则」，并说明删除后跟随全局。\n- 匿名统计新增首次提示与重置安装 ID。\n- 「关于」页显示 build 号；同一版本的新 build 升级时，升级窗口会标出前后的 build。",
+  "notesEn": "CDN address auto-pick upgrade:\n- Phones, computers and routers on the same network share test results, so new connections start on good addresses; only the network type and how each address did are sent, and it can be switched off under CDN addresses.\n- New Re-optimise and Pin; shows the current network, each address's result and the last report.\n- A subscription entry's several CDN addresses now show as one row.\n- A round taken while the network is unstable is dropped, and the next one waits longer.\nSubscriptions:\n- A subscription's name and link can be edited.\n- Choose how it updates: direct only, proxy only, proxy first then direct, or direct first then proxy.\n- EdgeNest subscriptions refresh every 30 minutes; adding the same subscription twice is flagged.\nConnections:\n- Moves off a node that cannot connect sooner; when every node fails at once (for example, no network) it no longer switches back and forth.\n- Automatic selection tests every 60 seconds.\nOther:\n- On the Devices page, Delete is now Delete rule, and says the device then follows the global mode.\n- Anonymous statistics get a first-run notice and a reset-install-ID button.\n- The About page shows the build number; when a new build of the same version is offered, the upgrade dialog shows both builds."
 }
