@@ -1,10 +1,10 @@
 # EdgeNest Router — Releases
 
-EdgeNest Router 是装在 iStoreOS / OpenWrt 软路由上的面板：让家里的设备按规则走代理，在外的手机电脑能连回家，还能把家里的服务发布到外网。这里放安装包和自升级用的 `router-version.json`，最新版本见 [Releases](../../releases/latest)。
+EdgeNest Router 是装在软路由（iStoreOS / OpenWrt）或普通 Linux 机器（Debian / Ubuntu）上的面板：让家里的设备按规则走代理，在外的手机电脑能连回家，还能把家里的服务发布到外网。这里放安装包和自升级用的 `router-version.json`，最新版本见 [Releases](../../releases/latest)。
 
-EdgeNest Router is a panel for iStoreOS / OpenWrt soft routers: it routes the devices at home through proxies by rule, lets phones and computers reach home while away, and publishes home services to the internet. This repository hosts the packages and the self-upgrade feed (`router-version.json`); see [Releases](../../releases/latest) for the latest version.
+EdgeNest Router is a panel for soft routers (iStoreOS / OpenWrt) and ordinary Linux machines (Debian / Ubuntu): it routes the devices at home through proxies by rule, lets phones and computers reach home while away, and publishes home services to the internet. This repository hosts the packages and the self-upgrade feed (`router-version.json`); see [Releases](../../releases/latest) for the latest version.
 
-## 安装（三选一）
+## 安装（按你的机器选一种）
 
 **已经有 iStoreOS / OpenWrt：**
 
@@ -22,9 +22,23 @@ EdgeNest Router is a panel for iStoreOS / OpenWrt soft routers: it routes the de
 - 第一次打开面板会有「开始使用」向导，几步设好固定地址和哪些设备走它。
 - 镜像在 Proxmox 上测过；VMware 和 Hyper-V 还没实测。
 
+**普通的 Debian / Ubuntu 机器或虚拟机（64 位的 x86 或 ARM）：**
+
+- 一行命令安装：
+
+  ```
+  curl -fsSL https://raw.githubusercontent.com/aipo-lenshow/EdgeNest-router/main/get.sh | sudo bash
+  ```
+
+- 安装时只问两件事：语言，以及用 Docker 运行还是直接装进系统。
+- 以后再跑一次同一条命令，可以更新、换运行方式或卸载，设置都保留。
+- 这样装出来的是旁路由：把要走它的设备的网关和 DNS 指到这台机器。
+- 这种装法暂不支持「局域网共享挂载」。
+- x86 在 Debian 12 和 Ubuntu 24.04 上测过；ARM 64 位只在模拟环境里测过，还没在真机上实测。
+
 **装好之后：** 浏览器打开 `http://<路由器地址>:1123`。第一次登录用户名和密码都是 `EdgeNest`，登录后会要求改密码。以后在面板「关于 → 检查更新」就能在线升级。
 
-## Install (pick one)
+## Install (pick the one for your machine)
 
 **Already running iStoreOS / OpenWrt:**
 
@@ -41,6 +55,20 @@ EdgeNest Router is a panel for iStoreOS / OpenWrt soft routers: it routes the de
 - The image starts as a side router: plug it into your network, it takes its address from the main router and hands out none itself.
 - The first time you open the panel, a "Get started" guide sets a fixed address and which devices go through it, in a few steps.
 - The image is tested on Proxmox; VMware and Hyper-V are not tested yet.
+
+**An ordinary Debian / Ubuntu machine or virtual machine (64-bit x86 or ARM):**
+
+- Install with one command:
+
+  ```
+  curl -fsSL https://raw.githubusercontent.com/aipo-lenshow/EdgeNest-router/main/get.sh | sudo bash
+  ```
+
+- It asks two things: the language, and whether to run in Docker or directly on the system.
+- Run the same command again later to update, switch between the two, or remove; settings are kept.
+- Installed this way it is a side router: point the gateway and DNS of the devices that should go through it at this machine.
+- "LAN share mounting" is not available with this way of installing yet.
+- x86 is tested on Debian 12 and Ubuntu 24.04; 64-bit ARM has only been tested under emulation, not on real hardware yet.
 
 **After installing:** open `http://<router-address>:1123` in a browser. The first sign-in is `EdgeNest` / `EdgeNest`, and you will be asked to set a new password. Later, upgrade in place from About → Check for updates.
 
