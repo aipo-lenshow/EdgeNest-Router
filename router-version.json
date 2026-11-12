@@ -1,30 +1,38 @@
 {
-  "versionCode": 219,
-  "version": "1.96",
-  "versionFull": "1.96+219",
+  "versionCode": 235,
+  "version": "1.97",
+  "versionFull": "1.97+235",
   "downloads": {
-    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.96/edgenest-router_1.96+219_x86_64.ipk",
-    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.96/edgenest-router_1.96+219_aarch64_generic.ipk"
+    "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.97/edgenest-router_1.97+235_x86_64.ipk",
+    "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.97/edgenest-router_1.97+235_aarch64_generic.ipk",
+    "linux-amd64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.97/edgenest-router_1.97+235_linux-amd64.tar.gz",
+    "image-linux-amd64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.97/edgenest-router-image_1.97+235_linux-amd64.tar.gz",
+    "linux-arm64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.97/edgenest-router_1.97+235_linux-arm64.tar.gz",
+    "image-linux-arm64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.97/edgenest-router-image_1.97+235_linux-arm64.tar.gz"
   },
   "sha256": {
-    "x86_64": "e1b302425600dc67897b607d5b781360897d9b314697900184f71fff38e2bdec",
-    "aarch64_generic": "bb6064cfaa09b202e2c5bbfa286ba157071c48543ce05addbbcf395f769cbdb5"
+    "x86_64": "a4840369b1cb2b260710f736ee42f51645919d149e44789d8214bf4a1bc1666c",
+    "aarch64_generic": "e24bce6852ed811aaf84b093b09a7167d55c7bd6de05212ad7d271d13eb5b9b1",
+    "linux-amd64": "c03a9e7067dd662f22ad4820424bf82d575ce92f8abb8d07749f88b5eaea2be4",
+    "image-linux-amd64": "e3638c031d6ce7b160a562eea475e1eca32bfbcd8307895908b67a047738d5fd",
+    "linux-arm64": "ddabba4e43640e4d082ecc63620d6e57e76ea5382e9d22222716a2d098f1dbcd",
+    "image-linux-arm64": "a302dde62a41a31a5fcc66437be3bcb23c70125e3848dd40f2fc578391af6d0b"
   },
-  "notesZh": "组网：\n- 新增「兜底服务器」（组网 › 伪装入口页最下面）：家里直连不通时，手机和电脑可以经你自己的 EdgeNest 服务器绕一下连回家；服务器开着低调模式也能用（经 CDN）。需要 EdgeNest 服务器 1.41 或更新。兜底服务器的名字跟订阅里的名字一致。\n- 伪装入口更难被认出来：开「端口跳跃」后，设备在 30000-30049 之间换着端口连；开「混淆」后改用 30050-30099，流量看起来像杂乱数据，已连着的设备不会断。每台路由器有自己随机的握手名称，有人来探测只会看到一张普通网页。主路由开了 UPnP 时会自动申请整段端口。\n- 订阅里带端口跳跃的 Hysteria2 节点（端口写成一段）现在能正常导入，以前会被丢掉。\n安装：\n- 新增预装镜像（x86）：写进 U 盘或导入虚拟机，开机就有 EdgeNest。第一次打开面板会有「开始使用」向导，几步设好固定地址和让哪些设备走路由器。\n其他：\n- 内置规则更新到 11 月 3 日。",
-  "notesEn": "Mesh:\n- New \"Fallback servers\" (at the bottom of Mesh › Disguised entry): when home can't be reached directly, phones and computers can go through one of your own EdgeNest servers to reach home, including servers in low-profile mode (through the CDN). Needs EdgeNest server 1.41 or later. Fallback servers are named as in your subscription.\n- The disguised entry is harder to recognise: with \"Port hopping\" on, devices move between ports 30000-30049; with \"Obfuscation\" on they use 30050-30099 and the traffic looks like noise, without dropping devices already connected. Each router gets its own random handshake name, and anyone probing it only sees an ordinary web page. With UPnP on the main router the whole port range is requested automatically.\n- Hysteria2 nodes with port hopping (a port range) in subscriptions now import; they used to be dropped.\nInstall:\n- New preinstalled image (x86): write it to a USB stick or import it into a virtual machine and EdgeNest is there at boot. The first time you open the panel a \"Get started\" guide sets a fixed address and which devices go through the router in a few steps.\nOther:\n- Built-in rules updated to November 3.",
+  "notesZh": "安装：\n- 新增通用 Linux 版：不装 iStoreOS / OpenWrt，也能在普通的 Debian / Ubuntu 机器或虚拟机上当旁路由用。一行命令安装，装的时候选用 Docker 运行还是直接装进系统；再跑一次同一条命令可以更新、换运行方式或卸载，设置都保留。支持 64 位的 x86 和 ARM。\n- 通用 Linux 版也能在面板里一键升级；新版本起不来会自动退回上一版。\n- 路由器程序被强行结束（断电、强删容器）后，下次启动会先清掉残留的转发规则，机器不会因此上不了网。\n设备：\n- 没有 DHCP 记录的旁路由也能认出更多设备：显示设备自己报的名字和系统类型，标出虚拟机和使用随机地址的手机。\n- 旁路由下设置设备策略时，会提示策略只管 IPv4（设备的 IPv6 直接走主路由）。\n修复：\n- 上传备份恢复后设置没有变回去的问题；现在恢复后路由器会自动重启并载入备份。\n- 通用 Linux 版上，远程连回家的设备不能上网、不能解析域名的问题。\n- Docker 版停止后，网关指向它的设备断网的问题；现在停止后设备直接上网。\n其他：\n- 通用 Linux 版暂不支持「局域网共享挂载」，面板里会直接说明。",
+  "notesEn": "Install:\n- New general-Linux edition: without iStoreOS / OpenWrt, an ordinary Debian / Ubuntu machine or virtual machine can now be the side gateway. One command installs it, either in Docker or directly on the system; running the same command again updates, switches between the two or removes it, and settings are kept. 64-bit x86 and ARM.\n- The general-Linux edition upgrades from the panel in one click too; if the new version cannot start it goes back to the previous one.\n- After the router program is killed abruptly (power loss, a force-removed container), the next start first clears the leftover redirect rules, so the machine does not lose its own network.\nDevices:\n- A side gateway with no DHCP records recognises more devices: it shows the name and system family a device reports, and marks virtual machines and phones using randomised addresses.\n- On a side gateway, the device policy form notes that a policy only covers IPv4 (a device's IPv6 goes straight to the main router).\nFixes:\n- Restoring an uploaded backup did not bring the settings back; the router now restarts itself after a restore and loads the backup.\n- On the general-Linux edition, devices dialled in from outside had no internet and could not resolve names.\n- Stopping the Docker edition cut off devices that use it as their gateway; they now go online directly.\nOther:\n- \"LAN share mounting\" is not available on the general-Linux edition yet; the panel says so.",
   "core": {
     "version": "1.14.4",
     "downloads": {
-      "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.96/edgenest-router-core_1.14.4_x86_64.ipk",
-      "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.96/edgenest-router-core_1.14.4_aarch64_generic.ipk"
+      "x86_64": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.97/edgenest-router-core_1.14.4_x86_64.ipk",
+      "aarch64_generic": "https://github.com/aipo-lenshow/EdgeNest-router/releases/download/v1.97/edgenest-router-core_1.14.4_aarch64_generic.ipk"
     },
     "sha256": {
-      "x86_64": "c88e839a8f28d7bcda8e9404b3e9195a991c60c6005ef786d7cbce1f5c05b7e7",
-      "aarch64_generic": "458caf4e7bf99bdb321a5c6add59541035c1cfe6c3b56093d18b44c0c7963d54"
+      "x86_64": "ea0ef74d469745ba7d806d188b800fe0b25a7723473c642efdf0237eb2d8958a",
+      "aarch64_generic": "3b02fddb3943e60ba51e11d9a7ab4c2af34d2bef2868e781e0d0ae408b1e75a8"
     },
     "binarySha256": {
-      "x86_64": "a360d1d6091b85dfa6f6dcc97e002eea7b7cff2e98910bfb4830a2946167f812",
-      "aarch64_generic": "e1977f4781e104b39f638b1f919f879c780ed4c17a032e7d7c70c326aa28b283"
+      "x86_64": "5bf3dde1abdb9ba074d5a883cd3ca29497c8dcd9b054171a2b44db2f8580050e",
+      "aarch64_generic": "e9285e3425bbede0879c6fb37c2c3f61e66193024144705728ffcf8ad798ffdf"
     }
   }
 }
